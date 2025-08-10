@@ -34,8 +34,14 @@ class RegisterRequest extends FormRequest
     {
         return [
             'username.required' => 'ユーザー名は必須項目です。',
+            'username.between' => 'ユーザー名は:min～:max文字で入力してください。',
             'email.required' => 'メールアドレスは必須項目です。',
+            'email.email' => '正しいメールアドレスの形式で入力してください。',
+            'email.between' => 'メールアドレスは:min～:max文字で入力してください。',
+            'email.unique' => 'メールアドレスは既に使用されています。',
             'password.required' => 'パスワードは必須項目です。',
+            'password.between' => 'パスワードは:min～:max文字で入力してください。',
+            'password.confirmed' => 'パスワードが一致していません。',
         ];
     }
 }

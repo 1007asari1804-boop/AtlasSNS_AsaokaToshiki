@@ -7,25 +7,25 @@
 {{ Form::label('ユーザー名') }}
 {{ Form::text('username',null,['class' => 'input']) }}
 @error('username')
-<span>{{ $error }}</span>
+<span>{{ $message }}</span>
 @enderror
 
 {{ Form::label('メールアドレス') }}
 {{ Form::email('email',null,['class' => 'input']) }}
 @error('email')
-<span>{{ $error }}</span>
+<span>{{ $message }}</span>
 @enderror
 
 {{ Form::label('パスワード') }}
 {{ Form::text('password',null,['class' => 'input']) }}
 @error('password')
-<span>{{ $error }}</span>
+<span>{{ $message }}</span>
 @enderror
 
 {{ Form::label('パスワード確認') }}
 {{ Form::text('password_confirmation',null,['class' => 'input']) }}
 @error('password_confirmation')
-<span>{{ $error }}</span>
+<span>{{ $message }}</span>
 @enderror
 
 {{ Form::submit('登録') }}
