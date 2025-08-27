@@ -25,7 +25,7 @@ class RegisterRequest extends FormRequest
     {
         return [
             'username' => ['required','string','between:2,12'],
-            'email' => ['required','email','between:5,40'.'unique:App\Models\User,email'],
+            'email' => ['required','email','between:5,40','unique:App\Models\User,email'],
             'password' => ['required','string','between:8,20','confirmed'],
         ];
     }
