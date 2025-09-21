@@ -61,6 +61,7 @@ p {
     font-size: 15px;
 }
 
+/* TOP */
 /* header */
 #head {
     display: flex;
@@ -84,14 +85,42 @@ a.top-page img {
 }
 
 .accordion-content {
-    width: 300px;
-    height: 300px;
+    width: 19%;
+    height: 19%;
     position: absolute;
-    top: 300px;
-    right: 0px;
+    top: 19%;
+    right: 0;
+}
+
+li .accordion {
+    padding: 2%;
 }
 
 /* side bar */
 .ff-container {
     display: flex;
+}
+
+.top-container {
+    margin: 3rem 0rem 3rem 8rem;
+}
+
+.top-container img {
+    width: 50px;
+}
+
+.top-container input {
+    width: 50vw;
+    padding-bottom: 70px;
+    margin: 0 1rem;
+    border: 0;
+}
+
+.post-button {
+    border: 0;
+    padding: 0;
+}
+
+.post-button img {
+    width: 50px;
 }
