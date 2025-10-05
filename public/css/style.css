@@ -124,3 +124,44 @@ li .accordion {
 .post-button img {
     width: 50px;
 }
+
+/* 投稿リスト */
+li {
+    list-style: none;
+    border-bottom: 1px solid #000;
+    display: flex;
+}
+
+.post-content {
+    width: 100%;
+    padding: 15px;
+}
+
+.post-content>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-name {
+    margin-bottom: 10px;
+}
+
+
+
+.search-container {
+    margin: 3rem 0rem 3rem 5rem;
+}
+
+.search-button {
+    border: 0;
+    padding: 0;
+}
+
+.search-button img {
+    width: 50px;
+}
+
+.search-container input {
+    width: 20vw;
+    padding: 1rem;
+}
