@@ -7,7 +7,13 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
     //
-    public function search(){
+    public function search(Request $request){
+        $keyword = $request->input('keyword');
+        if(!empty($keyword)){
+            $users = User::where('title','like', '%'.$keyword.'%')->get();
+        }else{
+            $users = User::all();
+        }
         return view('users.search');
     }
 }
