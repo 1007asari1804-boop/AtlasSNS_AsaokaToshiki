@@ -2,8 +2,13 @@
 
 <div class="top-container">
   <img src="images/icon1.png">
-  <input type="text" name="post" placeholder="投稿内容を入力してください。">
-  <button class="post-button"><img src="images/post.png"><a href="/top"></a></button>
+  {{ Form::open(['url' => '/posts/create']) }}
+  <div>
+    {{ Form::input('text', 'post', null, ['placeholder' => '投稿内容を入力してください。']) }}
+  </div>
+  <!-- <input type="text" name="post" placeholder="投稿内容を入力してください。"> -->
+  <button class="post-button" type='submit'><img src="images/post.png"></button>
+  {{ Form::close() }}
 </div>
 
 <div>

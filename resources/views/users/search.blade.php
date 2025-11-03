@@ -8,4 +8,14 @@
   </form>
 </div>
 
+<div>
+  <table>
+    @foreach ($users as $user)
+    <tr>
+      <td>{{ $user->icon_image }}</td>
+      <td>{{ $user->username }}</td>
+      <!-- <td>フォローボタン</td> -->
+    </tr>
+  </table>
+</div>
 </x-login-layout>
