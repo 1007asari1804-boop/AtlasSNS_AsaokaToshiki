@@ -181,9 +181,8 @@ Form {
     align-self: flex-start;
 }
 
-.top-container input {
+.top-container textarea {
     width: 50vw;
-    padding-bottom: 70px;
     margin: 1rem 1rem;
     border: 0;
 }

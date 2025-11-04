@@ -40,21 +40,21 @@
           <p>フォロー数</p>
           <p>〇〇名</p>
         </div>
-        <p class="btn btn-primary"><a href="/follow-list">フォローリスト</a></p>
+        <p><a href="/follow-list" class="btn btn-primary">フォローリスト</a></p>
         <div class="ff-container">
           <p>フォロワー数</p>
           <p>〇〇名</p>
         </div>
-        <p class="btn btn-primary"><a href="/follower-list">フォロワーリスト</a></p>
+        <p ><a href="/follower-list" class="btn btn-primary">フォロワーリスト</a></p>
       </div>
-      <p class="btn btn-primary"><a href="/search">ユーザー検索</a></p>
+      <p><a href="/search" class="btn btn-primary">ユーザー検索</a></p>
     </div>
   </div>
   <footer>
   </footer>
   <script src="{{ asset('js/app.js') }}"></script>
   <script src="{{ asset('js/menu.js') }}"></script>
-  <script src="JavaScriptファイルのURL"></script>
+  <script src="{{ asset('js/modal.js') }}"></script>
 </body>
 
 </html>

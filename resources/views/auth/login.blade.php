@@ -14,11 +14,10 @@
       {{ Form::label('パスワード') }}
       {{ Form::password('password',['class' => 'input']) }}
     </div>
-    <div class="login-button btn btn-danger">
-    {{ Form::submit('ログイン') }}
+    <div class="column">
+    {{ Form::submit('ログイン', ['class' => 'btn btn-danger', 'style' => 'margin-left: auto']) }}
+    <a href="register">新規ユーザーの方はこちら</a>
     </div>
-
-    <p><a href="register">新規ユーザーの方はこちら</a></p>
 
     {!! Form::close() !!}
   </div>
