@@ -8,7 +8,7 @@
                     <ul class="accordion-content">
                         <li class="accordion home"><a href="/top">ホーム</a></li>
                         <li class="accordion profile"><a href="/profile">プロフィール</a></li>
-                        <li class="accordion logout"><a href="/login">ログアウト</a></li>
+                        <li class="accordion logout"><a href="{{ route('logout') }}">ログアウト</a></li>
                     </ul>
                 </div>
             </div>

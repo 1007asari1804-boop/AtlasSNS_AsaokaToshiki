@@ -32,4 +32,8 @@ class AuthenticatedSessionController extends Controller
         return redirect()->intended('top');
     }
 
+    public function destroy(){
+        Auth::logout();
+        return to_route('login');
+    }
 }
