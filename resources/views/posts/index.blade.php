@@ -42,8 +42,19 @@
         </div>
         <div>投稿内容<br>投稿内容</div>
       </div>
+      <a class="js-modal-open" post="{{ $post->post }}" post_id="{{ $post->id }}"><img src="{{ asset("images/edit.png") }}" alt="編集"></a>
     </li>
   </ul>
 </div>
 
+<div class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+    {{ Form::open(['url' => '/posts/{id}/update']) }}
+    {{ Form::textarea('upPost', $post->post, ['class' => 'modal_post']) }}
+    {{ Form::hidden('id', $post->id, ['class' => 'modal_id']) }}
+    <button type='submit'><img src="{{ asset("images/edit.png") }}"></button>
+    {{ Form::close() }}
+  </div>
+</div>
 </x-login-layout>
