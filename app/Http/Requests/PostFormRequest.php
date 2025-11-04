@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -32,7 +32,7 @@ class PostFormRequest extends FormRequest
     {
         return [
             'post.required' => '入力してください。',
-            'post.between:1,150' => ':min～:max文字で入力してください。',
+            'post.between' => ':min～:max文字で入力してください。',
         ];
     }
 }
