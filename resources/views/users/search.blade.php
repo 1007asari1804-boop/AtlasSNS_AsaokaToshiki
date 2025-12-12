@@ -12,10 +12,11 @@
   <table>
     @foreach ($users as $user)
     <tr>
-      <td>{{ $user->icon_image }}</td>
+      <td><img src="{{ asset('images/' . $user->icon_image) }}" width="50"></td>
       <td>{{ $user->username }}</td>
       <!-- <td>フォローボタン</td> -->
     </tr>
+    @endforeach
   </table>
 </div>
 </x-login-layout>
