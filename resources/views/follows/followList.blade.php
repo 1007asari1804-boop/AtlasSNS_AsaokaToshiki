@@ -1,6 +1,10 @@
 <x-login-layout>
 
-
-  <h2>機能を実装していきましょう。</h2>
+<div>
+  <h2>フォローリスト</h2>
+  <div>
+    @foreach()
+  </div>
+</div>
 
 </x-login-layout>

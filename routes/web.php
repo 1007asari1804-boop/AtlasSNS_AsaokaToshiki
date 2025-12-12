@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\FollowsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,8 +33,8 @@ Route::middleware('auth')->group(function(){
 
   Route::get('/search', [UsersController::class, 'search']);
 
-  Route::get('/follow-list', [PostsController::class, 'followList']);
-  Route::get('/follower-list', [PostsController::class, 'followerList']);
+  Route::get('/follow-list', [FollowsController::class, 'followList']);
+  Route::get('/follower-list', [FollowsController::class, 'followerList']);
 
   Route::post('/posts/create', [PostsController::class, 'postCreate']);
 
